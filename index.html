@@ -2,23 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Oak City Locksmith | 24/7 Emergency Locksmith Raleigh NC</title>
-    <meta name="description" content="Fast 15-minute emergency locksmith in Raleigh, NC. We handle residential, automotive, and commercial lockouts in Wake County.">
+    <meta name="description" content="Fast 15-minute emergency locksmith in Raleigh, NC. We find local pros for residential, automotive, and commercial lockouts in Wake County.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .pulse { animation: pulse-bg 2s infinite; }
+        @keyframes pulse-bg {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
-    <div class="bg-red-700 text-white text-center py-2 font-bold uppercase text-xs tracking-widest">
-        🚨 15-Minute Response - Technician Dispatched Immediately in Raleigh
+<body class="bg-gray-100 font-sans text-gray-900 pb-20 md:pb-0">
+
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-sm border-t md:hidden z-50">
+        <a href="#lead-form" class="pulse flex items-center justify-center bg-red-600 text-white font-black py-4 rounded-xl text-lg shadow-2xl">
+            🔑 GET EMERGENCY QUOTE
+        </a>
     </div>
-    <main class="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <div class="bg-red-700 text-white text-center py-2 font-bold uppercase text-[10px] tracking-widest px-2">
+        🚨 Raleigh Dispatch: Finding Nearest Available Technician...
+    </div>
+
+    <main class="max-w-6xl mx-auto py-8 md:py-12 px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <header>
-            <img src="pics/locksmith.png" alt="Professional locksmith technician re-keying a door in Raleigh" class="rounded-2xl shadow-lg mb-6 w-full h-72 object-cover">
-            <h1 class="text-5xl font-black mb-6 leading-tight">Locked Out? <br><span class="text-red-600">We'll Get You In.</span></h1>
-            <p class="text-xl text-gray-600 mb-8 font-medium italic underline decoration-red-500">Expect a technician call-back in 15 minutes or less.</p>
+            <img src="pics/locksmith.png" alt="Raleigh Locksmith Service" class="rounded-2xl shadow-lg mb-6 w-full h-56 md:h-72 object-cover">
+            <h1 class="text-3xl md:text-5xl font-black mb-4 leading-tight text-gray-900">Locked Out? <br><span class="text-red-600">Find a Pro Now.</span></h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 font-medium italic underline decoration-red-500">Target callback: 15 minutes or less.</p>
             
-            <h2 class="text-2xl font-bold mb-4">Our Emergency Services</h2>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 mb-8">
+            <h2 class="text-xl font-bold mb-4">Included Services:</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 mb-8 text-sm">
                 <li>• 24/7 Residential Lockouts</li>
                 <li>• Emergency Car Key Cutting</li>
                 <li>• Lock Re-keying & Changes</li>
@@ -27,25 +44,25 @@
             </ul>
         </header>
 
-        <section class="bg-white p-8 rounded-xl shadow-2xl border-t-8 border-red-600">
-            <h2 class="text-2xl font-bold mb-6 text-center">Request Immediate Dispatch</h2>
+        <section id="lead-form" class="bg-white p-6 md:p-8 rounded-xl shadow-2xl border-t-8 border-red-600">
+            <h2 class="text-2xl font-bold mb-4 text-center">Search for Provider</h2>
             <form action="#" class="space-y-4">
-                <input type="text" placeholder="Full Name" required class="w-full p-4 rounded border border-gray-200 focus:ring-2 focus:ring-red-500 outline-none">
-                <input type="tel" placeholder="Phone Number" required class="w-full p-4 rounded border border-gray-200 focus:ring-2 focus:ring-red-500 outline-none">
-                <select class="w-full p-4 rounded border border-gray-200 focus:ring-2 focus:ring-red-500 outline-none">
+                <input type="text" placeholder="Full Name" required class="w-full p-4 rounded-lg bg-gray-50 border border-gray-200 text-lg focus:ring-2 focus:ring-red-500 outline-none">
+                <input type="tel" placeholder="Phone Number" required class="w-full p-4 rounded-lg bg-gray-50 border border-gray-200 text-lg focus:ring-2 focus:ring-red-500 outline-none">
+                <select class="w-full p-4 rounded-lg bg-gray-50 border border-gray-200 text-lg">
                     <option>Home/Car Lockout (Emergency)</option>
                     <option>New Keys / Key Duplication</option>
-                    <option>Commercial Lock Security</option>
+                    <option>Lock Change / Security Upgrade</option>
                 </select>
-                <button class="w-full bg-red-600 text-white font-black py-4 rounded text-xl shadow-lg hover:bg-red-700 transition">SEND HELP NOW</button>
+                <button class="w-full bg-red-600 text-white font-black py-5 rounded-lg text-xl shadow-lg active:scale-95 transition">GET HELP NOW</button>
             </form>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-10 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="font-bold mb-4 uppercase tracking-widest text-sm text-gray-400">Serving Raleigh & Wake County:</h3>
-            <p class="text-sm text-gray-300">Downtown Raleigh, North Hills, Cary, Apex, Wake Forest, Garner, Holly Springs, Morrisville, Knightdale, and Rolesville.</p>
+    <footer class="bg-gray-800 text-white py-10 px-6 mt-12 mb-12 md:mb-0">
+        <div class="max-w-6xl mx-auto text-center md:text-left">
+            <h3 class="font-bold mb-4 uppercase tracking-widest text-xs text-gray-400">Serving Raleigh & Wake County:</h3>
+            <p class="text-xs text-gray-300">Downtown, North Hills, Cary, Apex, Wake Forest, Garner, Holly Springs, Morrisville.</p>
         </div>
     </footer>
 </body>
